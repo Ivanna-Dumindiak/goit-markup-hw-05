@@ -16,7 +16,7 @@
 
     --portfolio-item-border-color: #eeeeee;
     --protfolio-border-color: #ececec;
-    --backround-icons-color: #f5f4fa;
+    --background-icons-color: #f5f4fa;
 
     --team-backgound-color: #f5f4fa;
 
@@ -284,7 +284,7 @@ img {
     color: var(--common-white);
     background-color: var(--social-icon-footer-primary-color);
     border-radius: 50%;
-    transition: backround-color var(--anim-cubic);
+    transition: background-color var(--anim-cubic);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -352,7 +352,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--backround-icons-color);
+    background-color: var(--background-icons-color);
     width: 270px;
     height: 120px;
     left: 215px;
@@ -415,7 +415,9 @@ img {
     align-items: center;
 }
 .over-box {
-    position: relative;
+    position: absolute;
+    top: 224px;
+    left: 0;
     bottom: 70px;
 
     width: 100%;
@@ -513,7 +515,7 @@ img {
     color: var(--social-icon-primary-color);
     background-color: var(--primary-background-color-white);
     border-radius: 50%;
-    transition: backround-color var(--anim-cubic), color var(--anim-cubic);
+    transition: background-color var(--anim-cubic), color var(--anim-cubic);
 }
 .team-social-link:focus,
 .team-social-link:hover {
@@ -563,7 +565,8 @@ img {
 
     color: var(--social-icon-primary-color);
     background-color: var(--primary-background-color-white);
-    transition: color var(--anim-cubic), border var(--anim-cubic);
+    transition: color var(--anim-cubic), border var(--anim-cubic),
+        background-color var(--anim-cubic);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -617,7 +620,7 @@ img {
 .portfolio-hero-btn-secondary {
     color: var(--primary-text-color-dark);
     background-color: var(--primary-background-color-grey);
-    transition: color var(--anim-cubic);
+    transition: color var(--anim-cubic), background-color var(--anim-cubic);
 }
 .portfolio-hero-btn-secondary:hover,
 .portfolio-hero-btn-secondary:focus {
